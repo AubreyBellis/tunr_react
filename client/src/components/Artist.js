@@ -42,7 +42,7 @@ class Artist extends Component{
           <div key={song.id}>
             <p>Title: {song.title}</p>
             <p>Album: {song.album}</p>
-            <audio controls src={song.preview_url}></audio>
+            {/* <audio controls src={song.preview_url}></audio> */}
           </div>
         ))}
       </ArtistStyles>
@@ -50,4 +50,4 @@ class Artist extends Component{
   }
 }
 
-export default Artist
+export default Artist;

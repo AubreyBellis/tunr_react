@@ -35,6 +35,9 @@ class AllArtists extends Component{
   }
 
   render(){
+    if (this.state.error){
+      return <h1>{this.state.error.message}</h1>
+    }
     return (
       <ArtistListStyles>
         {this.state.artists.map((artist) => (

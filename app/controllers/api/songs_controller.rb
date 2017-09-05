@@ -1,15 +1,17 @@
 class Api::SongsController < ApplicationController
   def index
-    @songs = Song.all
+    @artist = Artist.find(params[:artist_id])
+    @songs = @artist.songs.all
+
     render json: @songs
   end
+def show
+    @artist = Artist.find(params[:artist_id])
+    @song = @artist.songs.find params[:id]
 
-  def show
-    @song = Song.find(params[:id])
     render json: @song
   end
-
-  def create
+def create
     @song = Song.new song_params
 
     if @song.save

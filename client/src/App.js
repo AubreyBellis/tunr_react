@@ -4,6 +4,7 @@ import AllArtists from './components/AllArtists';
 import Artist from './components/Artist';
 import SignUp from './components/SignUp';
 import GlobalNav from './components/GlobalNav';
+
 class App extends Component {
   render() {
     return (

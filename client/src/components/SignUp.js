@@ -5,7 +5,7 @@ render(){
     return (
         <div>
             <h1>
-                hello from SIGNUP
+            SIGNUP
             </h1>
         </div>
     )

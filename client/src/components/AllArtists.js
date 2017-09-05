@@ -4,12 +4,11 @@ import ArtistCard from './ArtistCard';
 import styled from 'styled-components';
 
 const ArtistListStyles = styled.div`
-
-    width: 90%;
-    margin: 20px 5%;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin: 20px 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 class AllArtists extends Component{
@@ -37,14 +36,11 @@ class AllArtists extends Component{
 
   render(){
     return (
-      <div>
       <ArtistListStyles>
         {this.state.artists.map((artist) => (
-            <ArtistCard key={artist.id} artist={artist} />
-          )
-        )}
-        </ArtistListStyles>
-      </div>
+          <ArtistCard key={artist.id} artist={artist} />
+        ))}
+      </ArtistListStyles>
     )
   }
 }
